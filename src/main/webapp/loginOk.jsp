@@ -23,6 +23,7 @@
 			response.sendRedirect("loginSuccess.jsp");
 		} else {//로그인 실패
 			response.sendRedirect("loginFail.jsp");
+		}
 	%>
 </body>
 </html>

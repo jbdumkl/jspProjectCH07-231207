@@ -15,10 +15,7 @@
 			response.addCookie(cookies[i]);
 		}
 	%>
-	<a href="cookieTest.jsp"쿠키 삭제 확인;<br>
+	<a href="cookieTest.jsp">쿠키 체크 페이지 가기</a>
 		
-		for(int i=0;i<cookies.length;i++) {
-			out.println(cookies)
-			response.addCookie(cookies[i]);
 </body>
 </html>

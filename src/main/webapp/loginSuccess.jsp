@@ -15,7 +15,17 @@
 			//out.println("쿠키의 이름:"+cookies[i].getName()+"<br>");
 			//out.println("쿠키의 값:"+cookies[i].getValue()+"<br>");
 		//}
-		String loginOkid = cookies[0].getValue();
+		String loginOkid="";
+		
+		if(cookies != null) {
+			for(int i=0;i<cookies.length;i++) {
+				if(cookies[i].getName().equals("cookieid")){
+					loginOkid = cookies[i].getValue()+"<br>";
+				}
+			}
+		} else {
+				response.sendRedirect("login.jsp");
+		}
 	%>
 	<h1><%= loginOkid %></h1>님 로그인을 환영합니다!
 	<a href="logout.jsp">로그아웃</a>

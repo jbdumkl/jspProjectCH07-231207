@@ -4,11 +4,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인 실패</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>로그인에 실패하였습니다!</h1>
-	<a href="login.jsp">로그인 페니지로 가기</a>
+	<%
+	
+	Cookie[] cookies = request.getCookies();
+	
+	for(int i=0;i<cookies.length;i++) {
+		out.println(cookies[i].getName()+"<br>");
+	}
 
+	%>
+	
+	
 </body>
 </html>
